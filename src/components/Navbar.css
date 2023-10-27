@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: cover;
+    background-image: url("../assets/navbarBackground.png"); /* Görselinizi burada belirtin. */
+    background-size: 100% 100%;  /* Görseli tamamen kutuya streçler */
+  /* Görseli boyutunu koruyarak kutuya sığdırır */
+
+    padding: 10px 20px;
+    height: 50px; /* İhtiyacınıza göre bu değeri değiştirebilirsiniz */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  .nav-logo {
+    position: relative;
+    top: 10;
+
+    width: 175px; /* Logonuzun boyutuna bağlı olarak bu değeri değiştirin. */
+    height: 250px;
+    background: url('../assets/logo.png') no-repeat center center; /* Logonuzun yolunu belirtin. */
+    background-size: contain;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+  }
+  .nav-logo-wbt {
+    position: absolute;
+    top: 35px;
+    left : 40px;
+    right: 0;
+    width: 135px; /* Logonuzun boyutuna bağlı olarak bu değeri değiştirin. */
+    height: 135px;
+    background: url('../assets/logoWBT.png') no-repeat center center; /* Logonuzun yolunu belirtin. */
+    background-size: contain;
+ 
+    z-index: 2;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  .nav-button {
+    background-color: transparent;
+    background-image: url("../assets/nav-button.png");
+    background-size: 100% 100%;/* Görselinizi burada belirtin. */ /* Arka plan rengi şeffaf */
+    border: none; /* Kenarlık kaldırılıyor */
+    color: #fff; /* Yazı rengi beyaz */
+    font-size: 16px; /* Yazı boyutu */
+    margin: 0 15px;
+    width: 75px;
+    height: 50px; /* Buton arası boşluk */
+    cursor: pointer; /* Mouse imlecini el şeklinde yapar */
+  }
+  
+  
+  .nav-button:hover {
+    text-decoration: underline; /* Mouse üzerine geldiğinde altı çizili olacak */
+  }
+  .nav-button-div {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    width: 100;
+    height:  100px;
+    align-items: center;
+  }
+  body {
+    background-image: url("../assets/background.png"); /* Görselin yolu doğruysa bu şekilde tanımlayabilirsiniz. */
+    background-repeat: no-repeat;
+    background-size: cover; /* Görselin tam ekran kaplamasını sağlar. */
+    background-position: center center; /* Görselin merkezlenmesini sağlar. */
+    background-attachment: fixed; /* Görselin sabit kalmasını sağlar, kaydırma yapılırken görsel sabit kalır. */
+  }
+ 
